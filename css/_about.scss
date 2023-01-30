@@ -1,0 +1,158 @@
+main{
+    
+    .container {
+        display: flex;
+        width: 100%;
+
+        .about {
+            height: calc(100% - 80px);
+            width: 300%;
+            padding-top: 8%;
+            padding-left: 48px;
+            display: flex;
+            flex-direction: column;
+
+
+            .about-header {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+
+                .tittle-header {
+                    font-size: 28px;
+
+                }
+
+                .info-header {
+                    width: 90%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 16px;
+                    margin: 12px 24px 12px 0;
+                    justify-content: space-between;
+                    color: #f8f8f8;
+                }
+
+                .watch-header {
+                    width: 100%;
+                    display: flex;
+                    justify-content: left;
+                    margin-top: 12px;
+
+                    div {
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &:nth-child(1) {
+                            width: 180px;
+                            border-radius: 15px;
+                            font-size: 24px;
+                            background: #52965D;
+                            transition: ease-in-out .5s;
+
+                            &:hover {
+                                background: #f8f8f8;
+                                transition: ease-in-out .5s;
+
+                                a {
+                                    color: black;
+                                    transition: ease-in-out .5s;
+                                }
+                            }
+
+                            a {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 15px;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            width: 100px;
+                            display: flex;
+                            justify-content: space-around;
+                            margin-left: 12px;
+                            font-size: 16px;
+
+                            a {
+                                height: 40px;
+                                width: 40px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border: 3px solid #f8f8f8;
+                                border-radius: 50px;
+
+                                &:hover {
+                                    background: #f8f8f8;
+                                    transition: ease-in-out .5s;
+                                    border: 3px solid black;
+                                
+                                    i {
+                                        color: black;
+                                        transition: ease-in-out .3s;
+                                    }
+                                }
+                            }
+                            .fa-share-nodes {
+                                margin-left: -3px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .about-synopsis {
+                margin: 36px 0 120px;
+                line-height: 1.5;
+                display: flex;
+                position: relative;
+
+                div {
+                    height: 100%;
+                    width: 100%;
+                    
+                    p {
+                        color: #f8f8f8;
+                    }
+                }
+            }
+
+            .about-info {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-top: -36px;
+
+                ul{
+                    margin-bottom: 8px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    &:nth-child(2){
+                        border-bottom: 1px solid #52965d7c;
+                    }
+                    
+                    li{
+                        width: 25%;
+
+                        h4, h5{
+                            color: #f8f8f890;
+                        }
+
+                        h4{
+                            margin-right: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

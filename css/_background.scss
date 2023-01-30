@@ -1,0 +1,20 @@
+.bg-img {
+    height: 65%;
+    width: 100%;
+    background-image: url(/img/TLOU-banner4.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 19, 20);
+    position: absolute;
+    z-index: -1;
+    
+    .bg {
+        height: 100%;
+        width: 100%;
+        margin-top: 100px;
+        background: linear-gradient(to top, rgba(0,19,20,1)
+        45%, rgba(0,19,121,0) 100%, rgba(0,212,255,0) 100%);
+        position: relative;
+    }
+}

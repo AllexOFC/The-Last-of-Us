@@ -1,0 +1,22 @@
+footer{
+    .credits {
+        width: 50%;
+        margin-top: -36px;
+        margin-left: 25%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        bottom: 0;
+        a {
+            color: #f8f8f880;
+            transition: ease-in-out .3s;
+    
+            &:hover {
+                color: #f8f8f8;
+                transition: ease-in-out .3s;
+            }
+       }
+    }
+}
